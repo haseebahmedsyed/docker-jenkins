@@ -15,10 +15,10 @@ pipeline {
                 }
             }
         }
-        // stage('Build Docker App'){
-        //     steps{
-        //         sh 'docker build -t haseeb38/dockerapp:0.0.1.RELEASE .'
-        //     }
-        // }
+        stage('Build Docker App'){
+            steps{
+                sh 'docker build -t haseeb38/dockerapp:0.0.1.RELEASE .'
+            }
+        }
     }
 }
