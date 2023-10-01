@@ -17,7 +17,7 @@ pipeline {
         }
          stage('Build Docker App'){
              steps{
-                 sh 'sudo docker build -t haseeb38/dockerapp:0.0.1.RELEASE .'
+                 sh 'docker build -t haseeb38/dockerapp:0.0.1.RELEASE .'
              }
         }
     }
