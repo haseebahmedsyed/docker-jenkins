@@ -1,5 +1,5 @@
 FROM tomcat:9
-WORKDIR /home/ubuntu/tomcat/webapps/
-ADD **/*.war /home/ubuntu/tomcat/webapps/
+WORKDIR /usr/local/tomcat/webapps/
+ADD **/*.war /usr/local/tomcat/webapps/
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
